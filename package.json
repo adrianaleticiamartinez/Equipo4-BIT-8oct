@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/adrianaleticiamartinez/Equipo4-BIT-8oct#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8",
+    "oracledb": "^5.0.0"
   }
 }

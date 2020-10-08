@@ -3,7 +3,6 @@ const http = require('http');
 
 function init() {
     //Crear nueva Promise para verificar si se inicializo el servidor correctamente.
-
     return new Promise((resolve, reject) => {
         const app = express();
         httpServer = http.createServer(app);
