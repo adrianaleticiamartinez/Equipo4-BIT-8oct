@@ -1,0 +1,22 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Client API Hackathon BIT BBVA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianaleticiamartinez/Equipo4-BIT-8oct.git"
+  },
+  "author": "Equipo 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianaleticiamartinez/Equipo4-BIT-8oct/issues"
+  },
+  "homepage": "https://github.com/adrianaleticiamartinez/Equipo4-BIT-8oct#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
