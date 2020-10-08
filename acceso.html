@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read CSV</title>
+	<!--Estilos--> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="papaparse.min.js"></script>
+</head>
+<body>
+
+
+    <!--Navigation-->
+    <nav class="navbar navbar-ligth bg-ligth">
+        <a href="#" class="navbar-brand">Access</a>
+    </nav>
+
+    
+	<div class="container">
+        <!--Aplication-->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card-header">
+                    <h4>Access</h4>
+                </div>
+                <form id="access-form" class="card-body">
+					<div class="form-group">
+						<input type="text" id="id-user" placeholder="ID" title="Solo acepta números"  
+                        class="form-control" pattern="^[0-40]+$" required>
+					</div>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="User Name" title="Nombre Solo acepta letras y espacios en blanco"  
+                        class="form-control" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="password"  title="
+                        De 8 a 15 caracteres,al menos una letra mayúscula y una minucula, al menos un dígito y 
+                         1 caracter especial,sin espacios en blanco"  id="password" placeholder="Password" class="form-control" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$" required>
+                        
+                    </div>
+
+                    <!-- <div class="contact-form-response none">
+                        <p>Enviando</p>
+                    </div> -->
+
+                    <div class="form-group" id="msn">
+                        <output>
+
+                        </output>
+                        
+                    </div>
+                    
+                    
+					<div class="form-group">
+						<input type="submit" value="Save" id="btn-primary-submit" class="btn btn-primary btn-block">
+						
+					</div>
+					<input type="file" id="upload-csv" accept=".csv">
+					<button id="btn-upload-csv">Read CSV</button>
+					<table id="tbl-data">
+						
+					</table>
+                </form>
+            </div>
+            <div id="access-list" class="col-md-8"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+	
+    <script src="validaacceso.js"></script>
+</body>
+</html>
